@@ -28,7 +28,7 @@ class Database extends Config
         'DSN'          => '',
         'hostname'     => 'localhost',
         'username'     => 'root',
-        'password'     => '',
+        'password'     => '',   
         'database'     => 'ets_proyek_3',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
