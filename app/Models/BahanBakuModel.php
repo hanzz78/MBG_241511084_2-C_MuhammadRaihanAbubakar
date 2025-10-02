@@ -2,9 +2,9 @@
 
 use CodeIgniter\Model;
 
-class UserModel extends Model
+class BahanBakuModel extends Model
 {
-    protected $table      = 'user';
+    protected $table      = 'bahan_baku';
     protected $primaryKey = 'id';
 
     protected $useAutoIncrement = true;
@@ -12,7 +12,10 @@ class UserModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false; 
 
-    protected $allowedFields = ['name', 'email', 'password', 'role'];
+    protected $allowedFields = [
+        'nama', 'kategori', 'jumlah', 'satuan', 'tanggal_masuk', 
+        'tanggal_kadaluarsa', 'status'
+    ];
 
     // --- PENTING: PERBAIKAN TIMESTAMPS ---
     protected $useTimestamps = true; // Tetap true karena ada created_at
@@ -22,7 +25,15 @@ class UserModel extends Model
     protected $deletedField  = ''; // GANTI: Gunakan string kosong untuk menonaktifkan soft delete
     // ------------------------------------
 
-    protected $validationRules    = [];
+    // Aturan validasi (sama seperti sebelumnya)
+    protected $validationRules = [
+        'nama' => 'required',
+        'kategori' => 'required',
+        'jumlah' => 'required|integer|greater_than[0]',
+        'satuan' => 'required',
+        'tanggal_masuk' => 'required|valid_date',
+        'tanggal_kadaluarsa' => 'required|valid_date|after_current_date'
+    ];
     protected $validationMessages = [];
-    protected $skipValidation     = false;
+    protected $skipValidation = false;
 }

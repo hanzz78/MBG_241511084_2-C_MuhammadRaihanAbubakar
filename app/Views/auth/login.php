@@ -1,51 +1,49 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <title><?= $title ?></title>
-    <style>
-        .container { max-width: 400px; margin: 50px auto; padding: 20px; border: 1px solid #ccc; }
-        .alert-error { color: red; }
-        .alert-info { color: blue; }
-        .alert-success { color: green; }
-    </style>
-</head>
-<body>
+<?= $this->extend('layouts/main') ?>
 
-<div class="container">
-    <h2>Login Aplikasi MBG</h2>
-    
-    <?php if (session()->getFlashdata('error')): ?>
-        <p class="alert-error"><?= session()->getFlashdata('error') ?></p>
-    <?php endif; ?>
-    <?php if (session()->getFlashdata('info')): ?>
-        <p class="alert-info"><?= session()->getFlashdata('info') ?></p>
-    <?php endif; ?>
+<?= $this->section('content') ?>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-primary text-white text-center py-3">
+                    <h4 class="mb-0">Akses Sistem MBG</h4>
+                    <p class="mb-0 small">Masukkan kredensial Anda</p>
+                </div>
+                <div class="card-body p-4">
 
-    <?php if (session()->getFlashdata('errors')): ?>
-        <div class="alert-error">
-            <ul>
-                <?php foreach (session()->getFlashdata('errors') as $error): ?>
-                    <li><?= $error ?></li>
-                <?php endforeach; ?>
-            </ul>
+                    <?php if (session()->getFlashdata('error')): ?>
+                        <div class="alert alert-danger"><?= session()->getFlashdata('error') ?></div>
+                    <?php endif; ?>
+                    <?php if (session()->getFlashdata('info')): ?>
+                        <div class="alert alert-info"><?= session()->getFlashdata('info') ?></div>
+                    <?php endif; ?>
+                    
+                    <form action="<?= base_url('login/process') ?>" method="post">
+                        <?= csrf_field() ?>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" value="<?= old('email') ?>" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-success mt-2">Login</button>
+                        </div>
+                    </form>
+
+                    <div class="mt-4 pt-3 border-top">
+                        <p class="small text-muted mb-1">Kredensial Uji Coba (Jika belum ada di DB):</p>
+                        <ul class="small mb-0 list-unstyled">
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    <?php endif; ?> 
-
-    <form action="<?= base_url('login/process') ?>" method="post">
-        <?= csrf_field() ?>
-        
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" value="<?= old('email') ?>" required><br><br>
-
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
-
-        <button type="submit">Login</button>
-    </form>
-    
-    </p>
+    </div>
 </div>
-
-</body>
-</html>
+<?= $this->endSection() ?>
