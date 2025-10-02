@@ -356,3 +356,677 @@ DEBUG - 2025-10-02 00:54:34 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2025-10-02 00:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-10-02 00:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-10-02 00:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:02:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:02:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:02:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-02 01:11:02 --> CodeIgniter\Validation\Exceptions\ValidationException: "after_current_date" is not a valid rule.
+[Method: PUT, Route: bahanbaku/update/1]
+in SYSTEMPATH\Validation\Validation.php on line 345.
+ 1 SYSTEMPATH\Validation\Validation.php(345): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('after_current_date')
+ 2 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('tanggal_kadaluarsa', 'tanggal_kadaluarsa', '2026-03-01', [...], [...], 'tanggal_kadaluarsa')
+ 3 SYSTEMPATH\BaseModel.php(1570): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 APPPATH\Controllers\BahanBaku.php(117): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BahanBaku->update('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BahanBaku))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+DEBUG - 2025-10-02 01:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-02 01:11:22 --> CodeIgniter\Validation\Exceptions\ValidationException: "after_current_date" is not a valid rule.
+[Method: PUT, Route: bahanbaku/update/7]
+in SYSTEMPATH\Validation\Validation.php on line 345.
+ 1 SYSTEMPATH\Validation\Validation.php(345): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('after_current_date')
+ 2 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('tanggal_kadaluarsa', 'tanggal_kadaluarsa', '2025-10-15', [...], [...], 'tanggal_kadaluarsa')
+ 3 SYSTEMPATH\BaseModel.php(1570): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 APPPATH\Controllers\BahanBaku.php(117): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BahanBaku->update('7')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BahanBaku))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+DEBUG - 2025-10-02 01:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-02 01:11:30 --> CodeIgniter\Validation\Exceptions\ValidationException: "after_current_date" is not a valid rule.
+[Method: PUT, Route: bahanbaku/update/7]
+in SYSTEMPATH\Validation\Validation.php on line 345.
+ 1 SYSTEMPATH\Validation\Validation.php(345): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('after_current_date')
+ 2 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('tanggal_kadaluarsa', 'tanggal_kadaluarsa', '2025-10-15', [...], [...], 'tanggal_kadaluarsa')
+ 3 SYSTEMPATH\BaseModel.php(1570): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 APPPATH\Controllers\BahanBaku.php(117): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BahanBaku->update('7')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BahanBaku))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+DEBUG - 2025-10-02 01:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-02 01:13:52 --> Error: Call to undefined function Config\Services\session()
+[Method: PUT, Route: bahanbaku/update/7]
+in APPPATH\Controllers\BahanBaku.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\BahanBaku->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+DEBUG - 2025-10-02 01:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-02 01:14:26 --> CodeIgniter\Validation\Exceptions\ValidationException: "after_equal" is not a valid rule.
+[Method: PUT, Route: bahanbaku/update/7]
+in SYSTEMPATH\Validation\Validation.php on line 345.
+ 1 SYSTEMPATH\Validation\Validation.php(345): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('after_equal')
+ 2 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('tanggal_kadaluarsa', 'tanggal_kadaluarsa', '2025-10-15', [...], [...], 'tanggal_kadaluarsa')
+ 3 SYSTEMPATH\Controller.php(138): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\BahanBaku.php(119): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BahanBaku->update('7')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BahanBaku))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+DEBUG - 2025-10-02 01:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-02 01:14:56 --> CodeIgniter\Validation\Exceptions\ValidationException: "after" is not a valid rule.
+[Method: PUT, Route: bahanbaku/update/7]
+in SYSTEMPATH\Validation\Validation.php on line 345.
+ 1 SYSTEMPATH\Validation\Validation.php(345): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('after')
+ 2 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('tanggal_kadaluarsa', 'tanggal_kadaluarsa', '2025-10-15', [...], [...], 'tanggal_kadaluarsa')
+ 3 SYSTEMPATH\Controller.php(138): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\BahanBaku.php(120): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BahanBaku->update('7')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BahanBaku))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+DEBUG - 2025-10-02 01:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:16:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-02 01:17:12 --> CodeIgniter\Validation\Exceptions\ValidationException: "after_current_date" is not a valid rule.
+[Method: PUT, Route: bahanbaku/update/7]
+in SYSTEMPATH\Validation\Validation.php on line 345.
+ 1 SYSTEMPATH\Validation\Validation.php(345): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('after_current_date')
+ 2 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('tanggal_kadaluarsa', 'tanggal_kadaluarsa', '2025-10-15', [...], [...], 'tanggal_kadaluarsa')
+ 3 SYSTEMPATH\BaseModel.php(1570): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(997): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(860): CodeIgniter\BaseModel->update([...], [...])
+ 6 APPPATH\Controllers\BahanBaku.php(169): CodeIgniter\Model->update('7', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BahanBaku->update('7')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BahanBaku))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+DEBUG - 2025-10-02 01:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-02 01:17:46 --> CodeIgniter\Validation\Exceptions\ValidationException: "after_current_date" is not a valid rule.
+[Method: PUT, Route: bahanbaku/update/7]
+in SYSTEMPATH\Validation\Validation.php on line 345.
+ 1 SYSTEMPATH\Validation\Validation.php(345): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('after_current_date')
+ 2 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('tanggal_kadaluarsa', 'tanggal_kadaluarsa', '2025-10-15', [...], [...], 'tanggal_kadaluarsa')
+ 3 SYSTEMPATH\BaseModel.php(1570): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(997): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(860): CodeIgniter\BaseModel->update([...], [...])
+ 6 APPPATH\Controllers\BahanBaku.php(172): CodeIgniter\Model->update('7', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BahanBaku->update('7')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BahanBaku))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+DEBUG - 2025-10-02 01:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-02 01:18:06 --> CodeIgniter\Validation\Exceptions\ValidationException: "after_current_date" is not a valid rule.
+[Method: PUT, Route: bahanbaku/update/7]
+in SYSTEMPATH\Validation\Validation.php on line 345.
+ 1 SYSTEMPATH\Validation\Validation.php(345): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('after_current_date')
+ 2 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('tanggal_kadaluarsa', 'tanggal_kadaluarsa', '2025-10-15', [...], [...], 'tanggal_kadaluarsa')
+ 3 SYSTEMPATH\BaseModel.php(1570): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(997): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(860): CodeIgniter\BaseModel->update([...], [...])
+ 6 APPPATH\Controllers\BahanBaku.php(172): CodeIgniter\Model->update('7', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BahanBaku->update('7')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BahanBaku))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+DEBUG - 2025-10-02 01:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-02 01:18:46 --> CodeIgniter\Validation\Exceptions\ValidationException: "after_current_date" is not a valid rule.
+[Method: POST, Route: bahanbaku/simpan]
+in SYSTEMPATH\Validation\Validation.php on line 345.
+ 1 SYSTEMPATH\Validation\Validation.php(345): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('after_current_date')
+ 2 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('tanggal_kadaluarsa', 'tanggal_kadaluarsa', '2025-10-31', [...], [...], 'tanggal_kadaluarsa')
+ 3 SYSTEMPATH\BaseModel.php(1570): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(807): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\BahanBaku.php(107): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BahanBaku->simpan()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BahanBaku))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+DEBUG - 2025-10-02 01:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-02 01:20:18 --> CodeIgniter\Validation\Exceptions\ValidationException: "after_current_date" is not a valid rule.
+[Method: POST, Route: bahanbaku/simpan]
+in SYSTEMPATH\Validation\Validation.php on line 345.
+ 1 SYSTEMPATH\Validation\Validation.php(345): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('after_current_date')
+ 2 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('tanggal_kadaluarsa', 'tanggal_kadaluarsa', '2025-10-31', [...], [...], 'tanggal_kadaluarsa')
+ 3 SYSTEMPATH\BaseModel.php(1570): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(807): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\BahanBaku.php(106): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BahanBaku->simpan()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BahanBaku))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+CRITICAL - 2025-10-02 01:21:19 --> ErrorException: Cannot declare class App\Controllers\BahanBaku, because the name is already in use
+[Method: POST, Route: bahanbaku/simpan]
+in APPPATH\Models\BahanBakuModel.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-10-02 01:22:33 --> ErrorException: Cannot declare class App\Controllers\BahanBaku, because the name is already in use
+[Method: POST, Route: bahanbaku/simpan]
+in APPPATH\Models\BahanBakuModel.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-10-02 01:22:35 --> ErrorException: Cannot declare class App\Controllers\BahanBaku, because the name is already in use
+[Method: POST, Route: bahanbaku/simpan]
+in APPPATH\Models\BahanBakuModel.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-10-02 01:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-10-02 01:23:54 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ba...', 0)
+#1 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ba...')
+#2 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ba...')
+#3 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#4 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\app\Controllers\BahanBaku.php(100): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\CodeIgniter.php(933): App\Controllers\BahanBaku->simpan()
+#9 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BahanBaku))
+#10 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-10-02 01:23:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: POST, Route: bahanbaku/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bahan_baku` (`nama`, `kategori`, `jumlah`, `satuan`, `tanggal_masuk`, `tanggal_kadaluarsa`, `status`, `created_at`, `updated_at`) VALUES (:nama:, :kategori:, :jumlah:, :satuan:, :tanggal_masuk:, :tanggal_kadaluarsa:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\BahanBaku.php(100): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BahanBaku->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BahanBaku))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+CRITICAL - 2025-10-02 01:23:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bahan_baku` (`nama`, `kategori`, `jumlah`, `satuan`, `tanggal_masuk`, `tanggal_kadaluarsa`, `status`, `created_at`, `updated_at`) VALUES (\'Ayam\', \'Protein\', \'1\', \'kg\', \'2025-10-02\', \'2025-10-31\', \'tersedia\', \'2025-10-02 01:23:54\', \'2025-10-02 01:23:54\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bahan_baku` (`nama`, `kategori`, `jumlah`, `satuan`, `tanggal_masuk`, `tanggal_kadaluarsa`, `status`, `created_at`, `updated_at`) VALUES (\'Ayam\', \'Protein\', \'1\', \'kg\', \'2025-10-02\', \'2025-10-31\', \'tersedia\', \'2025-10-02 01:23:54\', \'2025-10-02 01:23:54\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bahan_baku` (`nama`, `kategori`, `jumlah`, `satuan`, `tanggal_masuk`, `tanggal_kadaluarsa`, `status`, `created_at`, `updated_at`) VALUES (:nama:, :kategori:, :jumlah:, :satuan:, :tanggal_masuk:, :tanggal_kadaluarsa:, :status:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\BahanBaku.php(100): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BahanBaku->simpan()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BahanBaku))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+CRITICAL - 2025-10-02 01:23:54 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `bahan_baku` (`nama`, `kategori`, `jumlah`, `satuan`, `tanggal_masuk`, `tanggal_kadaluarsa`, `status`, `created_at`, `updated_at`) VALUES (\'Ayam\', \'Protein\', \'1\', \'kg\', \'2025-10-02\', \'2025-10-31\', \'tersedia\', \'2025-10-02 01:23:54\', \'2025-10-02 01:23:54\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bahan_baku` (`nama`, `kategori`, `jumlah`, `satuan`, `tanggal_masuk`, `tanggal_kadaluarsa`, `status`, `created_at`, `updated_at`) VALUES (\'Ayam\', \'Protein\', \'1\', \'kg\', \'2025-10-02\', \'2025-10-31\', \'tersedia\', \'2025-10-02 01:23:54\', \'2025-10-02 01:23:54\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bahan_baku` (`nama`, `kategori`, `jumlah`, `satuan`, `tanggal_masuk`, `tanggal_kadaluarsa`, `status`, `created_at`, `updated_at`) VALUES (\'Ayam\', \'Protein\', \'1\', \'kg\', \'2025-10-02\', \'2025-10-31\', \'tersedia\', \'2025-10-02 01:23:54\', \'2025-10-02 01:23:54\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bahan_baku` (`nama`, `kategori`, `jumlah`, `satuan`, `tanggal_masuk`, `tanggal_kadaluarsa`, `status`, `created_at`, `updated_at`) VALUES (:nama:, :kategori:, :jumlah:, :satuan:, :tanggal_masuk:, :tanggal_kadaluarsa:, :status:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BahanBaku.php(100): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BahanBaku->simpan()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BahanBaku))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+DEBUG - 2025-10-02 01:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:27:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:27:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:36:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-02 01:38:03 --> Error: Class "App\Models\DetailPermintaanModel" not found
+[Method: GET, Route: permintaan/gudang]
+in APPPATH\Controllers\Permintaan.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Permintaan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+DEBUG - 2025-10-02 01:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-02 01:38:21 --> Error: Class "App\Models\DetailPermintaanModel" not found
+[Method: GET, Route: permintaan/gudang]
+in APPPATH\Controllers\Permintaan.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Permintaan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+CRITICAL - 2025-10-02 01:39:43 --> Error: Class "App\Models\PermintaanDetailModel" not found
+[Method: GET, Route: permintaan/gudang]
+in APPPATH\Controllers\Permintaan.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Permintaan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+DEBUG - 2025-10-02 01:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-02 01:40:12 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::findAll()
+[Method: GET, Route: permintaan/gudang]
+in APPPATH\Controllers\Permintaan.php on line 68.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Permintaan->approvalList()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+DEBUG - 2025-10-02 01:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-10-02 01:41:04 --> mysqli_sql_exception: Table 'ets_proyek_3.users' doesn't exist in C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `p`.*, `...', 0)
+#1 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.*, `...')
+#2 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.*, `...')
+#3 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `...', Array, false)
+#4 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\app\Controllers\Permintaan.php(67): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\CodeIgniter.php(933): App\Controllers\Permintaan->approvalList()
+#6 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+#7 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-10-02 01:41:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ets_proyek_3.users' doesn't exist
+[Method: GET, Route: permintaan/gudang]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC', [], false)
+ 2 APPPATH\Controllers\Permintaan.php(67): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Permintaan->approvalList()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+CRITICAL - 2025-10-02 01:41:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ets_proyek_3.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC', [], false)
+ 4 APPPATH\Controllers\Permintaan.php(67): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Permintaan->approvalList()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+CRITICAL - 2025-10-02 01:41:04 --> [Caused by] mysqli_sql_exception: Table 'ets_proyek_3.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC', [], false)
+ 5 APPPATH\Controllers\Permintaan.php(67): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Permintaan->approvalList()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+DEBUG - 2025-10-02 01:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-10-02 01:44:05 --> mysqli_sql_exception: Table 'ets_proyek_3.users' doesn't exist in C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `p`.*, `...', 0)
+#1 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.*, `...')
+#2 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.*, `...')
+#3 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `...', Array, false)
+#4 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\app\Controllers\Permintaan.php(67): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\CodeIgniter.php(933): App\Controllers\Permintaan->approvalList()
+#6 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+#7 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-10-02 01:44:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ets_proyek_3.users' doesn't exist
+[Method: GET, Route: permintaan/gudang]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC', [], false)
+ 2 APPPATH\Controllers\Permintaan.php(67): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Permintaan->approvalList()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+CRITICAL - 2025-10-02 01:44:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ets_proyek_3.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC', [], false)
+ 4 APPPATH\Controllers\Permintaan.php(67): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Permintaan->approvalList()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+CRITICAL - 2025-10-02 01:44:05 --> [Caused by] mysqli_sql_exception: Table 'ets_proyek_3.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC', [], false)
+ 5 APPPATH\Controllers\Permintaan.php(67): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Permintaan->approvalList()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+DEBUG - 2025-10-02 01:44:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-10-02 01:44:08 --> mysqli_sql_exception: Table 'ets_proyek_3.users' doesn't exist in C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `p`.*, `...', 0)
+#1 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.*, `...')
+#2 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.*, `...')
+#3 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `...', Array, false)
+#4 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\app\Controllers\Permintaan.php(67): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\CodeIgniter.php(933): App\Controllers\Permintaan->approvalList()
+#6 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+#7 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-10-02 01:44:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ets_proyek_3.users' doesn't exist
+[Method: GET, Route: permintaan/gudang]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC', [], false)
+ 2 APPPATH\Controllers\Permintaan.php(67): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Permintaan->approvalList()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+CRITICAL - 2025-10-02 01:44:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ets_proyek_3.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC', [], false)
+ 4 APPPATH\Controllers\Permintaan.php(67): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Permintaan->approvalList()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+CRITICAL - 2025-10-02 01:44:08 --> [Caused by] mysqli_sql_exception: Table 'ets_proyek_3.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC', [], false)
+ 5 APPPATH\Controllers\Permintaan.php(67): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Permintaan->approvalList()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+DEBUG - 2025-10-02 01:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-10-02 01:45:17 --> mysqli_sql_exception: Table 'ets_proyek_3.users' doesn't exist in C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `p`.*, `...', 0)
+#1 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.*, `...')
+#2 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.*, `...')
+#3 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `...', Array, false)
+#4 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\app\Controllers\Permintaan.php(67): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\CodeIgniter.php(933): App\Controllers\Permintaan->approvalList()
+#6 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+#7 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\MBG_241511084_2-C_MuhammadRaihanAbubakar\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-10-02 01:45:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ets_proyek_3.users' doesn't exist
+[Method: GET, Route: permintaan/gudang]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC', [], false)
+ 2 APPPATH\Controllers\Permintaan.php(67): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Permintaan->approvalList()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+CRITICAL - 2025-10-02 01:45:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ets_proyek_3.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC', [], false)
+ 4 APPPATH\Controllers\Permintaan.php(67): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Permintaan->approvalList()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+CRITICAL - 2025-10-02 01:45:17 --> [Caused by] mysqli_sql_exception: Table 'ets_proyek_3.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `u`.`nama` as `user_name`
+FROM `permintaan` `p`
+LEFT JOIN `users` `u` ON `u`.`id` = `p`.`user_id`
+ORDER BY `created_at` ASC', [], false)
+ 5 APPPATH\Controllers\Permintaan.php(67): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Permintaan->approvalList()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permintaan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\MBG_241511084_2-C_MuhammadRaihanAbubakar\\public\\index.php')
+DEBUG - 2025-10-02 01:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 01:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 02:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 02:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 02:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 02:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 02:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 02:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 02:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 02:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 02:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 02:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 02:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 02:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 02:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-02 02:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

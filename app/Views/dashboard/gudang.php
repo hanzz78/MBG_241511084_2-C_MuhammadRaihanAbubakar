@@ -30,7 +30,7 @@
                 <div class="card-body">
                     <h5 class="card-title text-primary"><i class="bi bi-box-arrow-in-right"></i> Kelola Permintaan Bahan</h5>
                     <p class="card-text">Setujui atau tolak permintaan bahan dari Petugas Dapur. Fitur ini akan dikerjakan selanjutnya.</p>
-                    <a href="#" class="btn btn-primary mt-2 disabled"><i class="bi bi-hourglass-split"></i> Lihat Permintaan (WIP)</a>
+                     <a href="<?= base_url('permintaan/gudang') ?>" class="btn btn-primary mt-2"><i class="bi bi-file-text"></i> Lihat Permintaan Masuk</a>
                 </div>
             </div>
         </div>

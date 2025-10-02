@@ -4,36 +4,44 @@ use CodeIgniter\Model;
 
 class BahanBakuModel extends Model
 {
-    protected $table      = 'bahan_baku';
+    protected $table      = 'bahan_baku'; // Pastikan nama tabel benar
     protected $primaryKey = 'id';
-
     protected $useAutoIncrement = true;
-
     protected $returnType     = 'array';
-    protected $useSoftDeletes = false; 
+    protected $useSoftDeletes = false; // Atau true, sesuaikan kebutuhan
 
+    // Kolom yang diizinkan untuk diisi (field database)
     protected $allowedFields = [
-        'nama', 'kategori', 'jumlah', 'satuan', 'tanggal_masuk', 
-        'tanggal_kadaluarsa', 'status'
+        'nama', 
+        'kategori', 
+        'jumlah', 
+        'satuan', 
+        'tanggal_masuk', 
+        'tanggal_kadaluarsa', 
+        'status'
     ];
 
-    // --- PENTING: PERBAIKAN TIMESTAMPS ---
-    protected $useTimestamps = true; // Tetap true karena ada created_at
+    // Dates
+    protected $useTimestamps = false; // PERBAIKAN: Diubah menjadi FALSE
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'created_at';
-    protected $updatedField  = ''; // GANTI: Gunakan string kosong untuk menonaktifkan update timestamp
-    protected $deletedField  = ''; // GANTI: Gunakan string kosong untuk menonaktifkan soft delete
-    // ------------------------------------
+    protected $updatedField  = 'updated_at';
+    // protected $deletedField  = 'deleted_at'; // Hanya jika useSoftDeletes = true
 
-    // Aturan validasi (sama seperti sebelumnya)
-    protected $validationRules = [
-        'nama' => 'required',
-        'kategori' => 'required',
-        'jumlah' => 'required|integer|greater_than[0]',
-        'satuan' => 'required',
-        'tanggal_masuk' => 'required|valid_date',
-        'tanggal_kadaluarsa' => 'required|valid_date|after_current_date'
+    // Validation
+    // PENTING: Validation Rules di sini KOSONGKAN atau hanya pakai rules dasar
+    // untuk menghindari konflik dengan rules kustom 'after_current_date' 
+    // atau 'after' bawaan CI4 yang bisa memicu error.
+    protected $validationRules    = [
+        'nama'               => 'required|min_length[3]',
+        'kategori'           => 'required',
+        'jumlah'             => 'required|integer',
+        'satuan'             => 'required',
+        'tanggal_masuk'      => 'required', // Hanya required
+        'tanggal_kadaluarsa' => 'required', // Hanya required
     ];
+    
     protected $validationMessages = [];
-    protected $skipValidation = false;
+    protected $skipValidation     = false;
+    protected $cleanValidationRules = true;
 }
