@@ -143,4 +143,27 @@ class BahanBaku extends BaseController
             return redirect()->back()->withInput()->with('errors', $model->errors());
         }
     }
+    // app/Controllers/gudang/BahanBaku.php
+
+    // app/Controllers/gudang/BahanBaku.php
+
+    public function delete($id = null)
+    {
+        $model = new BahanBakuModel();
+        $bahan = $model->find($id);
+
+        if (!$bahan) {
+            return redirect()->to('/gudang/bahanbaku')->with('error', 'Bahan tidak ditemukan.');
+        }
+
+        $isExpired = strtotime($bahan['tanggal_kadaluarsa']) < strtotime(date('Y-m-d'));
+
+        if ($isExpired) {
+            // Baris ini sekarang akan berjalan
+            $model->delete($id); 
+            return redirect()->to('/gudang/bahanbaku')->with('message', 'Bahan kadaluarsa berhasil dihapus.');
+        } else {
+            return redirect()->to('/gudang/bahanbaku')->with('error', 'Hanya bahan dengan status kadaluarsa yang bisa dihapus.');
+        }
+    }
 }

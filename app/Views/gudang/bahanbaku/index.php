@@ -58,8 +58,7 @@
                         <td>
                             <a href="<?= site_url('gudang/bahanbaku/edit/' . $item['id']) ?>" class="btn btn-sm btn-warning">Edit</a>
                             
-                            <form action="<?= site_url('gudang/bahanbaku/delete/' . $item['id']) ?>" method="post" class="d-inline">
-                                <?= csrf_field() ?>
+                                    <form action="<?= site_url('gudang/bahanbaku/' . $item['id']) ?>" method="post" class="d-inline">                                <?= csrf_field() ?>
                                 <input type="hidden" name="_method" value="DELETE">
                                 <button type="submit" class="btn btn-sm btn-danger" 
                                         onclick="return confirm('Apakah Anda yakin? Hanya bahan kadaluarsa yang bisa dihapus.')"
