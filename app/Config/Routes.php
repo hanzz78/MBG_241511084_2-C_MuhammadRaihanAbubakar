@@ -3,8 +3,7 @@
 use CodeIgniter\Router\RouteCollection;
 
 /**
-// ... (lines 1-32)
-/**
+
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
@@ -24,3 +23,18 @@ $routes->group('gudang', ['filter' => 'auth:gudang', 'namespace' => 'App\Control
 $routes->group('dapur', ['filter' => 'auth:dapur', 'namespace' => 'App\Controllers\Dapur'], static function ($routes) {
     // Routes for Dapur features will be added here
 });
+
+// ... (existing code for $routes->group('gudang'))
+
+// Group routes for Gudang (Admin) with 'auth:gudang' filter
+$routes->group('gudang', ['filter' => 'auth:gudang', 'namespace' => 'App\Controllers\Gudang'], static function ($routes) {
+    // Bahan Baku (Commit 2, 3, 4, 5)
+    $routes->get('bahanbaku', 'BahanBaku::index'); // Commit 3
+    $routes->get('bahanbaku/create', 'BahanBaku::create'); // Commit 2
+    $routes->post('bahanbaku/store', 'BahanBaku::store'); // Commit 2
+    $routes->resource('bahanbaku', ['controller' => 'BahanBaku']);
+
+    
+
+   
+}); 
