@@ -18,6 +18,8 @@ $routes->group('gudang', ['filter' => 'auth:gudang', 'namespace' => 'App\Control
     
     $routes->resource('bahanbaku', ['except' => 'show']);
     $routes->get('bahanbaku/edit/(:num)', 'BahanBaku::edit/$1');
+    $routes->get('permintaan', 'Permintaan::index');
+
     
     // Nanti jika ada fitur lain untuk gudang, tambahkan di sini.
 });
