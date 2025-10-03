@@ -3,7 +3,6 @@
 use CodeIgniter\Router\RouteCollection;
 
 /**
-
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
@@ -16,25 +15,14 @@ $routes->get('dashboard', 'Dashboard::index', ['filter' => 'auth']); // Protecte
 
 // Group routes for Gudang (Admin) with 'auth:gudang' filter
 $routes->group('gudang', ['filter' => 'auth:gudang', 'namespace' => 'App\Controllers\Gudang'], static function ($routes) {
-    // Routes for Gudang features will be added here
+    
+    $routes->resource('bahanbaku', ['except' => 'show']);
+    $routes->get('bahanbaku/edit/(:num)', 'BahanBaku::edit/$1');
+    
+    // Nanti jika ada fitur lain untuk gudang, tambahkan di sini.
 });
 
 // Group routes for Dapur (Client) with 'auth:dapur' filter
 $routes->group('dapur', ['filter' => 'auth:dapur', 'namespace' => 'App\Controllers\Dapur'], static function ($routes) {
-    // Routes for Dapur features will be added here
+    // Nanti jika ada fitur untuk dapur, tambahkan di sini.
 });
-
-// ... (existing code for $routes->group('gudang'))
-
-// Group routes for Gudang (Admin) with 'auth:gudang' filter
-$routes->group('gudang', ['filter' => 'auth:gudang', 'namespace' => 'App\Controllers\Gudang'], static function ($routes) {
-    // Bahan Baku (Commit 2, 3, 4, 5)
-    $routes->get('bahanbaku', 'BahanBaku::index'); // Commit 3
-    $routes->get('bahanbaku/create', 'BahanBaku::create'); // Commit 2
-    $routes->post('bahanbaku/store', 'BahanBaku::store'); // Commit 2
-    $routes->resource('bahanbaku', ['controller' => 'BahanBaku']);
-
-    
-
-   
-}); 
