@@ -18,7 +18,9 @@ $routes->group('gudang', ['filter' => 'auth:gudang', 'namespace' => 'App\Control
     
     $routes->resource('bahanbaku', ['except' => 'show']);
     $routes->get('bahanbaku/edit/(:num)', 'BahanBaku::edit/$1');
+    
     $routes->get('permintaan', 'Permintaan::index');
+    $routes->get('permintaan/(:num)', 'Permintaan::show/$1'); 
 
     
     // Nanti jika ada fitur lain untuk gudang, tambahkan di sini.
@@ -26,5 +28,7 @@ $routes->group('gudang', ['filter' => 'auth:gudang', 'namespace' => 'App\Control
 
 // Group routes for Dapur (Client) with 'auth:dapur' filter
 $routes->group('dapur', ['filter' => 'auth:dapur', 'namespace' => 'App\Controllers\Dapur'], static function ($routes) {
-    // Nanti jika ada fitur untuk dapur, tambahkan di sini.
+      $routes->get('permintaan', 'Permintaan::index');          
+    $routes->get('permintaan/new', 'Permintaan::new');        
+    $routes->post('permintaan/create', 'Permintaan::create');
 });

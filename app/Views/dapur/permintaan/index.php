@@ -4,28 +4,25 @@
 <div class="container mt-5">
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h2><?= esc($title) ?></h2>
+        <a href="/dapur/permintaan/new" class="btn btn-primary">Buat Permintaan Baru</a>
     </div>
-    
-    <p>Berikut adalah daftar permintaan bahan baku yang diajukan oleh petugas dapur.</p>
+
+    <p>Berikut adalah riwayat permintaan bahan baku yang telah Anda ajukan.</p>
 
     <?php if (session()->getFlashdata('message')): ?>
         <div class="alert alert-success"><?= session()->getFlashdata('message') ?></div>
-    <?php endif ?>
-    <?php if (session()->getFlashdata('error')): ?>
-        <div class="alert alert-danger"><?= session()->getFlashdata('error') ?></div>
     <?php endif ?>
 
     <div class="table-responsive">
         <table class="table table-bordered table-striped">
             <thead class="table-dark">
                 <tr>
-                    <th>ID</th>
-                    <th>Nama Pemohon</th>
-                    <th>Menu Masakan</th>
-                    <th>Jml Porsi</th>
-                    <th>Tgl Masak</th>
+                    <th>ID Permintaan</th>
+                    <th>Menu Masakan / Bahan Baku</th>
+                    <th>Jumlah Porsi</th>
+                    <th>Tanggal Masak</th>
+                    <th>Tanggal Diajukan</th>
                     <th>Status</th>
-                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
@@ -33,14 +30,14 @@
                     <?php foreach ($permintaan as $item): ?>
                         <tr>
                             <td><?= esc($item['id']) ?></td>
-                            <td><?= esc($item['nama_pemohon']) ?></td>
                             <td><?= esc($item['menu_makan']) ?></td>
                             <td><?= esc($item['jumlah_porsi']) ?></td>
                             <td><?= date('d M Y', strtotime($item['tgl_masak'])) ?></td>
+                            <td><?= date('d M Y, H:i', strtotime($item['created_at'])) ?></td>
                             <td>
                                 <?php
                                 $status = esc($item['status']);
-                                $badgeClass = 'secondary';
+                                $badgeClass = 'secondary'; // Default
                                 if ($status === 'disetujui') {
                                     $badgeClass = 'success';
                                 } elseif ($status === 'menunggu') {
@@ -51,20 +48,15 @@
                                 ?>
                                 <span class="badge bg-<?= $badgeClass; ?>"><?= ucfirst($status); ?></span>
                             </td>
-                            <td>
-                                
-                                <a href="/gudang/permintaan/<?= esc($item['id'], 'url') ?>" class="btn btn-sm btn-info">Lihat Detail</a>
-
-                            </td>
                         </tr>
                     <?php endforeach; ?>
                 <?php else: ?>
                     <tr>
-                        <td colspan="7" class="text-center">Belum ada permintaan bahan baku.</td>
+                        <td colspan="6" class="text-center">Anda belum pernah mengajukan permintaan.</td>
                     </tr>
                 <?php endif; ?>
             </tbody>
         </table>
     </div>
 </div>
-<?= $this->endSection() ?>  
+<?= $this->endSection() ?>
