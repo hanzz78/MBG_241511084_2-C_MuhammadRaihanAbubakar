@@ -1,6 +1,12 @@
 <?= $this->extend('layouts/main') ?>
 
 <?= $this->section('content') ?>
+<style>
+    .input-error { border-color: #dc3545 !important; }
+    .error-message { color: #dc3545; font-size: 0.875em; margin-top: 0.25rem; }
+    #response-message { display: none; }
+</style>
+
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-9">
@@ -10,13 +16,10 @@
                 </div>
                 <div class="card-body">
                     
-                    <?php if (session()->has('error')) : ?>
-                        <div class="alert alert-danger">
-                            <?= session('error') ?>
-                        </div>
-                    <?php endif ?>
+                    <!-- Placeholder untuk pesan sukses/error dari AJAX -->
+                    <div id="response-message" class="alert" role="alert"></div>
 
-                    <form action="/dapur/permintaan/create" method="post">
+                    <form action="/dapur/permintaan/create" method="post" id="permintaan-form">
                         <?= csrf_field() ?>
 
                         <h5>Informasi Utama</h5>
@@ -38,33 +41,12 @@
                         <hr>
 
                         <h5>Detail Bahan Baku yang Dibutuhkan</h5>
-                        <div id="bahan-container">
-                            <!-- Baris pertama untuk item bahan baku -->
-                            <div class="row bahan-item mb-2 align-items-end">
-                                <div class="col-md-6">
-                                    <label class="form-label">Bahan Baku</label>
-                                    <select name="bahan_id[]" class="form-select" required>
-                                        <option value="">Pilih Bahan...</option>
-                                        <?php foreach ($bahan_baku as $bahan): ?>
-                                            <option value="<?= $bahan['id'] ?>"><?= esc($bahan['nama']) ?> (Stok: <?= $bahan['jumlah'] ?> <?= $bahan['satuan'] ?>)</option>
-                                        <?php endforeach; ?>
-                                    </select>
-                                </div>
-                                <div class="col-md-4">
-                                    <label class="form-label">Jumlah</label>
-                                    <input type="number" name="jumlah_diminta[]" class="form-control" required placeholder="Jumlah yang diminta">
-                                </div>
-                                <div class="col-md-2">
-                                    <button type="button" class="btn btn-danger w-100 remove-bahan">Hapus</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button type="button" id="add-bahan" class="btn btn-outline-secondary mt-2">Tambah Bahan Lain</button>
+                        <div id="bahan-container"></div>
+                        <button type="button" id="add-bahan" class="btn btn-outline-secondary mt-2">Tambah Bahan</button>
 
                         <div class="d-flex justify-content-end mt-4">
                             <a href="/dapur/permintaan" class="btn btn-secondary me-2">Batal</a>
-                            <button type="submit" class="btn btn-primary">Ajukan Permintaan</button>
+                            <button type="submit" id="submit-button" class="btn btn-primary">Ajukan Permintaan</button>
                         </div>
                     </form>
                 </div>
@@ -77,47 +59,128 @@
 document.addEventListener('DOMContentLoaded', function () {
     const container = document.getElementById('bahan-container');
     const addButton = document.getElementById('add-bahan');
-    
+    const form = document.getElementById('permintaan-form');
+    const submitButton = document.getElementById('submit-button');
+    const responseMessageDiv = document.getElementById('response-message');
+
     const bahanOptions = `
         <option value="">Pilih Bahan...</option>
         <?php foreach ($bahan_baku as $bahan): ?>
-            <option value="<?= $bahan['id'] ?>"><?= esc($bahan['nama']) ?> (Stok: <?= $bahan['jumlah'] ?> <?= $bahan['satuan'] ?>)</option>
+            <option value="<?= $bahan['id'] ?>" data-stok="<?= $bahan['jumlah'] ?>">
+                <?= esc($bahan['nama']) ?> (Stok: <?= $bahan['jumlah'] ?> <?= esc($bahan['satuan']) ?>)
+            </option>
         <?php endforeach; ?>
     `;
 
-    const newRowTemplate = `
-        <div class="row bahan-item mb-2 align-items-end">
+    function createNewRow() {
+        const div = document.createElement('div');
+        div.className = 'row bahan-item mb-3 align-items-center';
+        div.innerHTML = `
             <div class="col-md-6">
                 <label class="form-label">Bahan Baku</label>
-                <select name="bahan_id[]" class="form-select" required>
-                    ${bahanOptions}
-                </select>
+                <select name="bahan_id[]" class="form-select" required>${bahanOptions}</select>
             </div>
             <div class="col-md-4">
-                <label class="form-label">Jumlah</label>
-                <input type="number" name="jumlah_diminta[]" class="form-control" required placeholder="Jumlah yang diminta">
+                <label class="form-label">Jumlah Diminta</label>
+                <input type="number" name="jumlah_diminta[]" class="form-control jumlah-input" required min="1">
+                <div class="error-message"></div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 pt-4">
                 <button type="button" class="btn btn-danger w-100 remove-bahan">Hapus</button>
             </div>
-        </div>
-    `;
+        `;
+        container.appendChild(div);
+    }
+    
+    function checkAllInputs() {
+        let allValid = true;
+        container.querySelectorAll('.bahan-item').forEach(row => {
+            const jumlahInput = row.querySelector('.jumlah-input');
+            const select = row.querySelector('select');
+            const errorMessageDiv = row.querySelector('.error-message');
+            
+            const selectedOption = select.options[select.selectedIndex];
+            if (!selectedOption || !selectedOption.value) return;
+            
+            const stok = parseInt(selectedOption.getAttribute('data-stok')) || 0;
+            const jumlahDiminta = parseInt(jumlahInput.value) || 0;
 
-    addButton.addEventListener('click', function () {
-        const newRow = document.createElement('div');
-        newRow.innerHTML = newRowTemplate;
-        container.appendChild(newRow.firstElementChild);
-    });
+            if (stok > 0 && jumlahDiminta > stok) {
+                jumlahInput.classList.add('input-error');
+                errorMessageDiv.textContent = 'Jumlah melebihi stok!';
+                allValid = false;
+            } else {
+                jumlahInput.classList.remove('input-error');
+                errorMessageDiv.textContent = '';
+            }
+        });
+        submitButton.disabled = !allValid;
+    }
 
+    addButton.addEventListener('click', createNewRow);
     container.addEventListener('click', function (e) {
         if (e.target && e.target.classList.contains('remove-bahan')) {
             if (container.querySelectorAll('.bahan-item').length > 1) {
                 e.target.closest('.bahan-item').remove();
+                checkAllInputs();
             } else {
                 alert('Minimal harus ada satu bahan yang diminta.');
             }
         }
     });
+
+    ['change', 'keyup', 'input'].forEach(evt => container.addEventListener(evt, checkAllInputs));
+
+    form.addEventListener('submit', async function(event) {
+        event.preventDefault(); 
+
+        submitButton.disabled = true;
+        submitButton.textContent = 'Mengirim...';
+
+        const formData = new FormData(form);
+        
+        try {
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest',
+                }
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                responseMessageDiv.className = 'alert alert-success';
+                responseMessageDiv.textContent = result.message;
+                responseMessageDiv.style.display = 'block';
+                form.reset();
+                container.innerHTML = '';
+                createNewRow();
+                
+                setTimeout(() => {
+                    window.location.href = '/dapur/permintaan';
+                }, 2000);
+
+            } else {
+                const errorText = result.errors ? Object.values(result.errors).join(', ') : 'Terjadi kesalahan.';
+                responseMessageDiv.className = 'alert alert-danger';
+                responseMessageDiv.textContent = errorText;
+                responseMessageDiv.style.display = 'block';
+            }
+
+        } catch (error) {
+            responseMessageDiv.className = 'alert alert-danger';
+            responseMessageDiv.textContent = 'Tidak dapat terhubung ke server. Coba lagi.';
+            responseMessageDiv.style.display = 'block';
+        }
+
+        submitButton.disabled = false;
+        submitButton.textContent = 'Ajukan Permintaan';
+    });
+    
+    createNewRow();
 });
 </script>
 <?= $this->endSection() ?>
+

@@ -4,8 +4,8 @@ namespace App\Controllers\Dapur;
 
 use App\Controllers\BaseController;
 use App\Models\PermintaanModel;
-use App\Models\PermintaanDetailModel; // Tambahkan ini
-use App\Models\BahanBakuModel;       // Tambahkan ini
+use App\Models\PermintaanDetailModel;
+use App\Models\BahanBakuModel;
 
 class Permintaan extends BaseController
 {
@@ -43,14 +43,14 @@ class Permintaan extends BaseController
     }
 
     /**
-     * Menyimpan data permintaan baru ke tabel 'permintaan' dan 'permintaan_detail'.
+     * Menyimpan data permintaan baru ke database.
+     * Method ini sekarang bisa menangani request biasa dan AJAX.
      */
     public function create()
     {
         $permintaanModel = new PermintaanModel();
         $permintaanDetailModel = new PermintaanDetailModel();
 
-        // Data untuk tabel 'permintaan' utama
         $permintaanData = [
             'pemohon_id'   => session()->get('user_id'),
             'tgl_masak'    => $this->request->getPost('tgl_masak'),
@@ -68,7 +68,6 @@ class Permintaan extends BaseController
 
             if (!empty($bahanIds)) {
                 foreach ($bahanIds as $index => $bahanId) {
-                    // Hanya simpan jika ada jumlah yang diminta
                     if (!empty($jumlahDiminta[$index]) && $jumlahDiminta[$index] > 0) {
                         $detailData = [
                             'permintaan_id'  => $permintaanId,
@@ -80,9 +79,20 @@ class Permintaan extends BaseController
                 }
             }
             
-            return redirect()->to('/dapur/permintaan')->with('message', 'Permintaan berhasil diajukan.');
+            // Cek apakah ini permintaan AJAX dari JavaScript
+            if ($this->request->isAJAX()) {
+                return $this->response->setJSON(['success' => true, 'message' => 'Permintaan berhasil diajukan.']);
+            } else {
+                return redirect()->to('/dapur/permintaan')->with('message', 'Permintaan berhasil diajukan.');
+            }
+
         } else {
-            return redirect()->back()->withInput()->with('errors', $permintaanModel->errors());
+            if ($this->request->isAJAX()) {
+                return $this->response->setStatusCode(400)->setJSON(['success' => false, 'errors' => $permintaanModel->errors()]);
+            } else {
+                return redirect()->back()->withInput()->with('errors', $permintaanModel->errors());
+            }
         }
     }
 }
+
